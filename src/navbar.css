@@ -1,0 +1,21 @@
+.navbar {
+    background: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+}
+
+.leftPart { 
+    display: flex;
+    padding: 0 0 0 10px; 
+}
+
+.navbarLeftItem {
+    padding: 0 5px 0 5px;
+}
+
+.rightPart {
+    padding: 0 10px 0 0
+}
+    
