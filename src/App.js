@@ -1,12 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Navbar';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/login" component={Login} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </Router>
     </div>
   );
 }
