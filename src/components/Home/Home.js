@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import image from '../../imatges/images6BYG050S.jpg';
 
 const list = ["todo 1", "todo 2", "todo 3"];
 
@@ -31,6 +32,7 @@ const Home = () => {
         <input type="submit" value="Submit" />
         {submitted && <p>{number}</p>}
       </form>
+      <img src={image} alt='alt es per si no es veu la igmatge es vegi el text'/>
     </div>
   );
 };
